@@ -10,7 +10,8 @@ let ballArray = [
         ];
 //Losowo wybrana kula bedzie zwiekszona o 1
 let n = Math.floor(Math.random()*ballArray.length);
-console.log(ballArray.length);
+
+console.log(ballArray.length+"n:"+n);
 //console.log(ballArray);
 ballArray[n].weight+=1;
 console.log(ballArray);
@@ -26,6 +27,8 @@ for(let i =3;i<=5;i++){
 }
 console.log('-------------');
 console.log("kosz2:",kosz2);
+
+console.log(ballArray[6],ballArray[7])
 let wagaKosz1 = 0;
 let wagaKosz2 = 0;
 kosz1.forEach(ball=>wagaKosz1+=ball.weight);
@@ -45,7 +48,7 @@ if(wagaKosz1>wagaKosz2){
 }else if(wagaKosz1<wagaKosz2){
     if(kosz2[0].weight>kosz2[1].weight){
         console.log("Zwiekszono wagę u kuli numer:"+kosz2[0].num);
-    }else if(kosz1[0].weight<kosz1[1].weight){
+    }else if(kosz2[0].weight<kosz2[1].weight){
         console.log("Zwiekszono wagę u kuli numer:"+kosz2[1].num);
     }else{
         console.log("Zwiekszono wagę u kuli numer:"+kosz2[2].num);
